@@ -2,11 +2,19 @@ from flask import Flask, Blueprint, render_template, url_for, redirect
 import os
 
 def views_site():
-    views = Blueprint('views', __name__, static_folder='static', template_folder='../../src/html')
+    views = Blueprint(
+        'views',
+        __name__,
+        static_folder='static',
+        template_folder='../../src/templates'
+    )
     
     @views.route('/')
     def index():
-        return render_template('index.html')
+        return redirect(url_for('views.home'))
+    @views.route('/home')
+    def home():
+        return render_template('home.html')
     
     return views
 
