@@ -4,18 +4,42 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
-            PitrMath -
-            {% block html_title %}
-                Index
-            {% endblock %}
+            PitrMath
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main_style.css')}}">
+        <script type="text/javascript", src="{{url_for('static', filename='js/side_nav.js')}}"></script>
     </head>
-    <header>
-        <h1 class="h1">HELLO</h1>
-    </header>
+
     <body>
+        <div class="side-nav">
+            <div class="side-nav-header-1">
+                <h1>
+                    PitrMath
+                </h1>
+            </div>
+            <div class="side-nav-list">
+                <ul>
+                    <ul>
+                        <div>
+                            <button class="side-nav-collapsible">
+                                <h3>
+                                    <img src="" alt="">
+                                    Basic Mathematics
+                                </h3>
+                            </button>
+                            <div class="side-nav-options">
+                                <li>
+                                    <div class="side-nav-option">
+                                        <span>Basic calculator</span>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

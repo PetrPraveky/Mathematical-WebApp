@@ -11,10 +11,7 @@ def views_site():
     
     @views.route('/')
     def index():
-        return redirect(url_for('views.home'))
-    @views.route('/home')
-    def home():
-        return render_template('home.html')
+        return render_template('index.html')
     
     return views
 
