@@ -40,9 +40,9 @@ body {
     text-align: center;
     user-select: none;
 }
-.side-nav-list {
-    text-align: center;
-}
+/* .side-nav-list {
+} */
+/* Side nav collapsible */
 .side-nav-collapsible {
     border: none;
     cursor: pointer;
@@ -50,15 +50,37 @@ body {
     background-color: transparent;
     width: 100%;
     padding: 4% 0;
+    display: block;
+    text-align: center;
 }
 .side-nav-collapsible:hover {
     background-color: rgb(25, 27, 58);
     transition: 0.2s;
 }
+.side-nav-collapsible::after {
+    content: '\25be';
+    float: right;
+    transform: scale(2.5);
+    display: block;
+    padding-right: 4%;
+}
+.side-nav-collapsible--active {
+    background-color: rgb(25, 27, 58);
+}
+.side-nav-collapsible--active::after {
+    content: '\25b4';
+}
+/*  */
+.side-nav-list-title {
+    font-size: medium;
+    font-weight: 800;
+}
 .side-nav-options {
-    margin-left: 20%;
+    margin-left: 35%;
     list-style-type: none;
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
 }
 .side-nav-option {
     margin-top: 2%;
