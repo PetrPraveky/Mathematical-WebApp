@@ -18,11 +18,15 @@
     top: 0;
     left: 0;
 }
-
 body {
     background-color: rgb(0, 2, 24);
     height: 100%;
 }
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
 
 .side-nav {
     background-color: rgb(0, 3, 46);
@@ -101,6 +105,9 @@ body {
 .side-nav-option:hover {
     background-color: rgb(25, 27, 58);
 }
+.side-nav-option--active {
+    background-color: rgb(25, 27, 58);
+}
 /* Main page */
 .main-page-title {
     margin-left: 15%;
@@ -109,17 +116,29 @@ body {
     text-align: center;
     vertical-align:middle;
     user-select: none;
+    top: 1%;
+    position: absolute;
 }
 .main-part-page {
     margin-left: 17%;
     margin-top: 4%;
     margin-bottom: 2%;
     width: 80%;
+    height: 88%;
 
     top: 0;
     bottom: 0;
     
     background-color: rgb(0, 3, 46);
     position: fixed;
+    border: 2px rgb(202, 202, 202) solid;
+}
+/* Main page content */
+.main-part-page-margin {
+    margin: 3% 3% 3% 3%;
+    width: 93%;
+    top: 0;
+    bottom: 0;
+
     border: 2px rgb(202, 202, 202) solid;
 }

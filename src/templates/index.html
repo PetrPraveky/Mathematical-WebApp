@@ -5,17 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
             PitrMath
+            {%block page_title%}
+                
+            {%endblock%}
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main_style.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/calc_style.css')}}">
     </head>
     
     <body>
         <div class="side-nav">
             <div class="side-nav-header-1">
                 <h1>
-                    PitrMath
+                    <a href="/home">
+                        PitrMath
+                    </a>
                 </h1>
             </div>
             <div class="side-nav-list">
@@ -33,7 +39,9 @@
                                 <button class="side-nav-option">
                                     <span>
                                         {%block side_nav_option_1_1%}
-                                            Basic Calculator
+                                            <a href="/basicmath/basiccalc">
+                                                Basic Calculator
+                                            </a>
                                         {%endblock%}
                                     </span>
                                 </button>
@@ -42,7 +50,9 @@
                                 <button class="side-nav-option">
                                     <span>
                                         {%block side_nav_option_1_2%}
-                                            Basic Equations
+                                            <a href="">
+                                                Basic Equations
+                                            </a>
                                         {%endblock%}
                                     </span>
                                 </button>
@@ -303,9 +313,8 @@
         <div>
             <div class="main-page-title">
                 <h1>
-                    PitrMath -
                     {% block main_page_title %}
-                        home
+                        Home
                     {%endblock%}
                 </h1>
             </div>

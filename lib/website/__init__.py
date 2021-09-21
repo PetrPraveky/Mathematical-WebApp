@@ -9,9 +9,17 @@ def views_site():
         template_folder='../../src/templates'
     )
     
+    @views.route('/home')
+    def home():
+        return render_template('index.html')
     @views.route('/')
     def index():
-        return render_template('index.html')
+        return redirect('/home')
+    
+    # Basic math routes
+    @views.route('/basicmath/basiccalc')
+    def basiccalc():
+        return render_template('basic_math/b_calc.html')
     
     return views
 
