@@ -135,10 +135,11 @@ a {
 }
 /* Main page content */
 .main-part-page-margin {
-    margin: 3% 3% 3% 3%;
-    width: 93%;
+    width: 60%;
     top: 0;
     bottom: 0;
+    margin: 3% auto;
 
     border: 2px rgb(202, 202, 202) solid;
+    border-radius: 1em;
 }

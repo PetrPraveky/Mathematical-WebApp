@@ -1,5 +1,6 @@
 .calc-input-box {
     background-color: rgb(202,202,202);
+    border-radius: 0.5em;
 
     height: 4em;
     padding: 1% 1%;
@@ -21,4 +22,29 @@
     display: flex;
     justify-content: right;
     align-items: flex-end;
+}
+.calc-buttons {
+    border: rgb(202,202,202) 2px solid;
+    border-radius: 1em;
+    padding: 2% 2%;
+    width: 31.20em;
+    margin: 6% auto;
+}
+.calc-button {
+    color: rgb(5, 5, 5);
+    margin: 0.2em 0.2em;
+    border-radius: 0.5em;
+    background-color: rgb(202,202,202);
+    width: 4em;
+    height: 3.5em;
+    text-align: center;
+}
+.calc-button-shift {
+    color: rgb(5, 5, 5);
+    margin: 0.2em 0.2em;
+    border-radius: 0.5em;
+    background-color: rgb(202,202,202);
+    width: 8.725em;
+    height: 3.5em;
+    text-align: center;    
 }
